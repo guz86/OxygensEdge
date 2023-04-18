@@ -27,7 +27,6 @@ namespace Gameplay.States
         {
             var direction = _moveEngine.Direction;
             _transformEngine.RotateTowardsInDirection(direction, _rotationSpeed, Time.fixedDeltaTime);
-
         }
     }
 }
