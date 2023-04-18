@@ -39,7 +39,7 @@ namespace Elementary
         {
             if (this.enterOnEnable)
             {
-                this.Enter();
+               this.Enter();
             }
         }
 

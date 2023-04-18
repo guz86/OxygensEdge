@@ -101,6 +101,7 @@ namespace GameEngine
 
         private void StartMove()
         {
+            
             for (int i = 0, count = this.startActions.Length; i < count; i++)
             {
                 var action = this.startActions[i];

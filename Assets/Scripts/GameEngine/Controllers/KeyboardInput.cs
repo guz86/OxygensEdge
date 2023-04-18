@@ -42,8 +42,15 @@ namespace GameEngine.Controllers
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
             
+             
             var moveDirection = new Vector3(horizontal, 0, vertical);
-            this.Move(moveDirection);
+            
+            if (moveDirection != Vector3.zero)
+            {
+                this.Move(moveDirection);
+            }
+            
+            
         }
 
         private void Move(Vector3 direction)
