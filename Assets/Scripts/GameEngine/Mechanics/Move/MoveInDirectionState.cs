@@ -1,9 +1,10 @@
-﻿using Elementary;
+﻿using System.Collections;
+using Elementary;
 using UnityEngine;
 
-namespace GameEngine.Mechanics
+namespace GameEngine.Mechanics.Move
 {
-    public class MoveInDirectionMechanics : MonoBehaviour
+    public class MoveInDirectionState : StateCoroutine
     {
         [SerializeField]
         private MoveInDirectionEngine moveEngine;
@@ -14,19 +15,21 @@ namespace GameEngine.Mechanics
         [SerializeField]
         private FloatAdapter moveSpeed;
 
-        private void FixedUpdate()
+        protected override IEnumerator Do()
         {
-            if (this.moveEngine.IsMoving)
+            var delay = new WaitForFixedUpdate();
+            while (true)
             {
-                this.MoveTransform(this.moveEngine.Direction);
+                yield return delay;
+                this.MoveTransform();
             }
         }
 
-        private void MoveTransform(Vector3 direction)
+        private void MoveTransform()
         {
+            var direction = this.moveEngine.Direction;
             var velocity = direction * (this.moveSpeed.Value * Time.fixedDeltaTime);
             this.transformEngine.MovePosition(velocity);
-            this.transformEngine.LookInDirection(direction);
         }
     }
 }

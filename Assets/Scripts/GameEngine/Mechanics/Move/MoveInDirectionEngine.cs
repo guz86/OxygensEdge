@@ -1,9 +1,8 @@
 ﻿using System;
-using GameEngine.Mechanics;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GameEngine
+namespace GameEngine.Mechanics.Move
 {
     public class MoveInDirectionEngine : MonoBehaviour
     {

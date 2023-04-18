@@ -1,7 +1,7 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GameEngine.Mechanics
+namespace GameEngine.Mechanics.Move
 {
     public class TransformEngine : MonoBehaviour
     {

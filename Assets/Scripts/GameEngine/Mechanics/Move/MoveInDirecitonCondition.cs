@@ -1,7 +1,7 @@
 ﻿using Elementary;
 using UnityEngine;
 
-namespace GameEngine.Mechanics
+namespace GameEngine.Mechanics.Move
 {
     public abstract class MoveInDirecitonCondition : ConditionBehaviour<Vector3>
     {
