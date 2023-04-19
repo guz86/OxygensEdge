@@ -2,7 +2,7 @@
 
 namespace Components
 {
-    public interface IDeathComponent
+    public interface IEventDeathComponent
     {
         event Action OnDied;
     }

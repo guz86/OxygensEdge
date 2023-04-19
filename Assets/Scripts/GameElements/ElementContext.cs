@@ -121,6 +121,7 @@ namespace GameElements
 
         internal void FinishGame()
         {
+            Debug.Log("FinishGame() ");
             this.cache.Clear();
             this.cache.AddRange(this.gameElements);
             

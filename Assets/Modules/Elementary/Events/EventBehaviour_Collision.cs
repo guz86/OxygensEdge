@@ -15,7 +15,7 @@ namespace Elementary
         
         private void OnCollisionEnter(Collision collision)
         {
-            this.OnCollisionEntered?.Invoke(collision);
+           this.OnCollisionEntered?.Invoke(collision);
         }
 
         private void OnCollisionStay(Collision collision)
@@ -25,7 +25,7 @@ namespace Elementary
 
         private void OnCollisionExit(Collision collision)
         {
-            this.OnCollisionExited?.Invoke(collision);
+             this.OnCollisionExited?.Invoke(collision);
         }
     }
 }

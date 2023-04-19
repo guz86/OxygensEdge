@@ -22,12 +22,12 @@ namespace GameEngine.Controllers
 
         void IGameStartElement.StartGame(IGameContext context)
         {
-            _character.Get<IDeathComponent>().OnDied += OnHeroDied;
+            _character.Get<IEventDeathComponent>().OnDied += OnHeroDied;
         }
 
         void IGameFinishElement.FinishGame(IGameContext context)
         {
-            _character.Get<IDeathComponent>().OnDied -= OnHeroDied;
+            _character.Get<IEventDeathComponent>().OnDied -= OnHeroDied;
         }
 
         private void OnHeroDied()

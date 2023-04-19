@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace Components
 {
-    public class DeathComponent : MonoBehaviour,
-        IDeathComponent
+    public class EventEventDeathComponent : MonoBehaviour,
+        IEventDeathComponent
     {
         
         [SerializeField] private EventBehaviour _deathReceiver;
