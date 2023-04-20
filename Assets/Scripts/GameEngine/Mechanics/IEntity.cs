@@ -1,6 +1,6 @@
 ﻿namespace GameEngine.Mechanics
 {
-    public interface IEntityProxy
+    public interface IEntity
     {
         T Get<T>();
 

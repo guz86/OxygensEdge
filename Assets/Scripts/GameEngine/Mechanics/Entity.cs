@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GameEngine.Mechanics
 {
-    public class EntityProxy : MonoBehaviour, IEntityProxy
+    public class Entity : MonoBehaviour, IEntity
     {
         [SerializeField] private UnityEntityBase _entity;
         

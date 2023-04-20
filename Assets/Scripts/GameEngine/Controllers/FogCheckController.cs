@@ -4,6 +4,7 @@ using GameEngine.Mechanics.Collisions;
 using Gameplay;
 using Modules.Entities;
 using UnityEngine;
+using IEntity = Modules.Entities.IEntity;
 
 namespace GameEngine.Controllers
 {
@@ -47,7 +48,7 @@ namespace GameEngine.Controllers
         
         private void OnHeroExited(Collider obj)
         {
-            Debug.Log("FogCheckController OnHeroExited"+ obj.tag);
+           // Debug.Log("FogCheckController OnHeroExited"+ obj.tag);
             if (obj.CompareTag(_colliderTag))
             {
                 _character.Get<IFogOxygenPointsComponent>().OutFog();
