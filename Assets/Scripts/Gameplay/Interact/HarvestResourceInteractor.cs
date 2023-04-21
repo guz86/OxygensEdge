@@ -3,7 +3,6 @@ using System.Collections;
 using Components.Collect;
 using Components.Resources_Components;
 using GameElements;
-using GameEngine.Mechanics;
 using Gameplay.GameResources;
 using UnityEngine;
 using IEntity = GameEngine.Mechanics.IEntity;

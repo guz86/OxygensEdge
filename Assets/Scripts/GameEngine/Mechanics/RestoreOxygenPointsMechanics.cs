@@ -32,6 +32,8 @@ namespace GameEngine.Mechanics
             _exitFogReceiver.OnEvent -= OnReadyToRestore;
             _delay.OnFinished -= OnDelayEnded;
             _restorePeriod.OnPeriodEvent -= OnRestoreHitPoints;
+            
+            _enterFogReceiver.OnEvent -= OnStopToRestore;
         }
 
         private void OnRestoreHitPoints()

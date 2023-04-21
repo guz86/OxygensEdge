@@ -9,6 +9,8 @@ namespace Gameplay.GameResources
         FRUIT = 1,
         PLANTS = 2,
         ROOTS = 3,
-        BONE = 4
+        BONE = 4,
+        KNIFE = 5,
+        OXYGEN = 6
     }
 }
