@@ -14,7 +14,7 @@ namespace GameEngine.Mechanics.Move
     {
         [ReadOnly]
         [ShowInInspector]
-        private KeyboardInput input;
+        private MovementInput input;
 
         [ReadOnly]
         [ShowInInspector]
@@ -22,7 +22,7 @@ namespace GameEngine.Mechanics.Move
 
         void IGameInitElement.InitGame(IGameContext context)
         {
-            this.input = context.GetService<KeyboardInput>();
+            this.input = context.GetService<MovementInput>();
             this.heroMoveComponent = context
                 .GetService<HeroService>()
                 .GetHero()

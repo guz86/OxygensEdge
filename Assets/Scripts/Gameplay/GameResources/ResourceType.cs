@@ -11,6 +11,7 @@ namespace Gameplay.GameResources
         ROOTS = 3,
         BONE = 4,
         KNIFE = 5,
-        OXYGEN = 6
+        OXYGEN = 6,
+        SWORD = 7
     }
 }

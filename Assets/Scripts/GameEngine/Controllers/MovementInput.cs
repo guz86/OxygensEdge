@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameEngine.Controllers
 {
-    public class KeyboardInput : MonoBehaviour,
+    public class MovementInput : MonoBehaviour,
         IGameStartElement,
         IGameFinishElement
     {

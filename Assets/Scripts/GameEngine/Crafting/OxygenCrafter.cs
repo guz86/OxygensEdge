@@ -22,7 +22,6 @@ namespace GameEngine.Crafting
 
         public void Craft()
         {
-            Debug.Log("Craft()");
             _resourceStorage.ExtractResource(ResourceType.FRUIT, 1);
             _resourceStorage.ExtractResource(ResourceType.ROOTS, 1);
             _resourceStorage.ExtractResource(ResourceType.PLANTS, 1);

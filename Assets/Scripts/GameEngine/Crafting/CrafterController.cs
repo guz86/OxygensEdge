@@ -11,16 +11,19 @@ namespace GameEngine.Crafting
         IGameFinishElement
     {
         public event Action OnKnifeCrafted;
+        public event Action OnSwordCrafted;
         public event Action OnOxygenCrafted;
 
         private ResourceStorage _resourceStorage;
         private KnifeCrafter _knifeCrafted;
+        private SwordCrafter _swordCrafted;
         private OxygenCrafter _oxygenCrafted;
 
         public void InitGame(IGameContext context)
         {
             _resourceStorage = context.GetService<ResourceStorage>();
             _knifeCrafted = context.GetService<KnifeCrafter>();
+            _swordCrafted = context.GetService<SwordCrafter>();
             _oxygenCrafted = context.GetService<OxygenCrafter>();
         }
 
@@ -44,18 +47,28 @@ namespace GameEngine.Crafting
                     OnKnifeCrafted?.Invoke();
                 }
             }
+            
+            if (type == ResourceType.BONE)
+            {
+                if (_swordCrafted.CanCraft())
+                {
+                    _swordCrafted.Craft();
+                    OnSwordCrafted?.Invoke();
+                }
+            }
 
             if (type is ResourceType.FRUIT 
                 or ResourceType.ROOTS 
                 or ResourceType.PLANTS)
             {
-                Debug.Log("_oxygenCrafted.CanCraft()"+ _oxygenCrafted.CanCraft());
+                
                 if (_oxygenCrafted.CanCraft())
                 {
                     _oxygenCrafted.Craft();
                     OnOxygenCrafted?.Invoke();
                 }
             }
+            
         }
     }
 }

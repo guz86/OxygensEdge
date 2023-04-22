@@ -1,4 +1,4 @@
-﻿using GameElements;
+﻿/*using GameElements;
 using Gameplay;
 using UnityEngine;
 using IEntity = Modules.Entities.IEntity;
@@ -12,8 +12,7 @@ namespace GameEngine.Crafting
     {
         private CrafterController _craftController;
         private IEntity _hero;
-
-
+         
         public void InitGame(IGameContext context)
         {
             _craftController = context.GetService<CrafterController>();
@@ -34,6 +33,7 @@ namespace GameEngine.Crafting
         {
             var activationKnife = _hero.Get<IComponent_ActivationKnife>();
             activationKnife.Activate();
+           
         }
     }
-}
+}*/

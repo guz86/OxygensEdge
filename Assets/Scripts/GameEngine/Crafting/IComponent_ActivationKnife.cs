@@ -3,5 +3,6 @@
     public interface IComponent_ActivationKnife
     {
         void Activate();
+        void DeActivate();
     }
 }
