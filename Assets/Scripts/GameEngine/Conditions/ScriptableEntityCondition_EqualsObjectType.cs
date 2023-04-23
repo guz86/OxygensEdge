@@ -1,7 +1,7 @@
 ﻿using Components;
 using GameEngine.ObjectTypes;
 using Gameplay.Interact;
-using IEntity = GameEngine.Mechanics.IEntity;
+using Modules.Entities;
 using UnityEngine;
 
 namespace GameEngine.Conditions

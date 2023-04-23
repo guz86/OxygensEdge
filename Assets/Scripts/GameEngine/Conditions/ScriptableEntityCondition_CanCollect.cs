@@ -1,6 +1,6 @@
 ﻿using Components.Collect;
 using Gameplay.Interact;
-using IEntity = GameEngine.Mechanics.IEntity;
+using Modules.Entities;
 using UnityEngine;
 
 namespace GameEngine.Conditions

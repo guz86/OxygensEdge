@@ -4,8 +4,8 @@ using Components.Collect;
 using Components.Resources_Components;
 using GameElements;
 using Gameplay.GameResources;
+using Modules.Entities;
 using UnityEngine;
-using IEntity = GameEngine.Mechanics.IEntity;
 
 namespace Gameplay.Interact
 {

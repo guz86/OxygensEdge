@@ -3,7 +3,7 @@ using GameEngine.Mechanics;
 using GameEngine.Mechanics.Collisions;
 using Modules.Entities;
 using UnityEngine;
-using IEntity = GameEngine.Mechanics.IEntity;
+using IEntity = Modules.Entities.IEntity;
 
 namespace Gameplay.Interact
 {

@@ -1,7 +1,7 @@
 ﻿using GameEngine.Mechanics;
 using Modules.Entities;
 using Sirenix.OdinInspector;
-using IEntity = GameEngine.Mechanics.IEntity;
+using IEntity = Modules.Entities.IEntity;
 
 #if ODIN_INSPECTOR
 

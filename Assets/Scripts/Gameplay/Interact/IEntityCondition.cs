@@ -1,6 +1,4 @@
-﻿using GameEngine.Mechanics;
-using Modules.Entities;
-using IEntity = GameEngine.Mechanics.IEntity;
+﻿using Modules.Entities;
 
 namespace Gameplay.Interact
 {

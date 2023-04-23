@@ -1,6 +1,7 @@
 ﻿using System;
 using Components;
 using Elementary;
+using Modules.Entities;
 using UnityEngine;
 
 namespace GameEngine.Mechanics

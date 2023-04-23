@@ -1,16 +1,16 @@
-﻿using GameEngine.Mechanics;
+﻿using Components.Transforms;
 using GameEngine.Mechanics.Move;
 using UnityEngine;
 
 namespace Components
 {
     public class Component_TransformEngine : MonoBehaviour
-        // ,
-        // IComponent_GetPosition,
-        // IComponent_SetPosition,
-        // IComponent_GetRotation,
-        // IComponent_SetRotation,
-        // IComponent_LookAtPosition
+        ,
+        IComponent_GetPosition,
+        IComponent_SetPosition,
+        IComponent_GetRotation,
+        IComponent_SetRotation,
+        IComponent_LookAtPosition
     {
         public Vector3 Position
         {
