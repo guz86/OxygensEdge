@@ -91,14 +91,11 @@ namespace GameEngine.AI.HSM.Agents
         {
             
             var myPosition = this.positionComponent.Position;
-            var distanceVector = this.targetPosiiton - myPosition;
-            Debug.Log($"myPosition {positionComponent.Position}, ");
-            Debug.Log($"targetPosiiton {targetPosiiton}, ");
             
-            Debug.Log($"!distanceVector {distanceVector}, ");
-
+            var distanceVector = this.targetPosiiton - myPosition;
+            
             this.isPositionReached = distanceVector.sqrMagnitude <= this.stoppingDistanceSqr;
-            Debug.Log($"!isPositionReached {isPositionReached}, ");
+            
             if (!this.isPositionReached)
             {
                 this.moveComponent.Move(distanceVector.normalized);

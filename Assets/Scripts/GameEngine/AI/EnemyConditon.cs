@@ -9,7 +9,7 @@ namespace GameEngine.AI
     public sealed class EnemyConditon : IEntityCondition
     {
         [SerializeField]
-        private string enemyName = "Dummy";
+        private string enemyName = "Hero";
     
         public bool IsTrue(IEntity entity)
         {
@@ -18,10 +18,10 @@ namespace GameEngine.AI
                 return false;
             }
 
-            if (!entity.TryGet(out IComponent_IsAlive aliveComponent) || !aliveComponent.IsAlive)
-            {
-                return false;
-            }
+            // if (!entity.TryGet(out IComponent_IsAlive aliveComponent) || !aliveComponent.IsAlive)
+            // {
+            //     return false;
+            // }
             
             return true;
         }

@@ -43,6 +43,7 @@ namespace GameEngine.AI.Sensors
 
         private bool FindTarget(Collider[] buffer, int size, out IEntity target)
         {
+            
             for (var i = 0; i < size; i++)
             {
                 var collder = buffer[i];
@@ -51,6 +52,7 @@ namespace GameEngine.AI.Sensors
                     target = entity;
                     return true;
                 }
+      
             }
 
             target = default;
