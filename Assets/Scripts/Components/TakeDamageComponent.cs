@@ -9,8 +9,6 @@ namespace Components
         
         public void TakeDamage(int damage)
         {
-            
-            Debug.Log("TakeDamageComponent  TakeDamage(int damage)" + damage);
             _takeDamageReceiver.Call(damage);
         }
     }

@@ -26,7 +26,6 @@ namespace GameEngine.Mechanics
 
         private void OnAttackRequest()
         {
-            Debug.Log("OnAttackRequest()");
             if (this.isAttack.Value)
             {
                 return;

@@ -38,9 +38,6 @@ namespace GameEngine.Mechanics
         public void DealDamage()
         {
             var damage = this.damage.Value;
-            
-            Debug.Log("DealDamage()" );
-            Debug.Log("damage " + damage);
 
             var bufferSize = this.OverlapColliders();
             for (var i = 0; i < bufferSize; i++)
@@ -49,7 +46,6 @@ namespace GameEngine.Mechanics
                 if (target.TryGetComponent(out IEntity entity) &&
                     entity.TryGet(out ITakeDamageComponent takeDamageComponent))
                 {
-                    Debug.Log("takeDamageComponent.TakeDamage(damage);" + damage);
                     takeDamageComponent.TakeDamage(damage);
                 }
             }

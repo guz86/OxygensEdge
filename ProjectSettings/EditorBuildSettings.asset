@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InventoryItem.unity
     guid: cc7f7a502cb43a447a3b1741bb425947
   - enabled: 0
@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/OxygenIDLERUN.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/AttackBot.unity
+    guid: c8aed62af8373cb40acb3c8207ca8cec
   m_configObjects: {}
