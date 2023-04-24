@@ -2,7 +2,6 @@
 using GameEngine.Mechanics;
 using GameEngine.Mechanics.Collisions;
 using Gameplay;
-using Modules.Entities;
 using UnityEngine;
 using IEntity = Modules.Entities.IEntity;
 
@@ -30,7 +29,7 @@ namespace GameEngine.Controllers
 
         void IGameFinishElement.FinishGame(IGameContext context)
         {
-            _character.Get<IComponent_TriggerEvents>().OnStaying -= OnHeroEntered;
+            _character.Get<IComponent_TriggerEvents>().OnEntered -= OnHeroEntered;
             _character.Get<IComponent_TriggerEvents>().OnExited -= OnHeroExited;
         }
 

@@ -30,7 +30,7 @@ namespace Gameplay.AnimatorSystem
         {
             if (eventId == this.animationEventId)
             {
-                this.unityEvent.Invoke();
+                this.unityEvent?.Invoke();
             }
         }
     }

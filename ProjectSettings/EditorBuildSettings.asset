@@ -14,7 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/OxygenIDLERUN.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AttackBot.unity
     guid: c8aed62af8373cb40acb3c8207ca8cec
+  - enabled: 1
+    path: Assets/Scenes/EnemyUI.unity
+    guid: a30122710e901a94bab8b40159e74144
   m_configObjects: {}

@@ -5,8 +5,7 @@ namespace GameEngine.Mechanics
 {
     public class DeactivationMechanics_ActivateAfterCountdown : MonoBehaviour
     {
-        [SerializeField]
-        private CountdownBehaviour countdown;
+        [SerializeField] private CountdownBehaviour countdown;
 
         [SerializeField]
         private ActivationBehaviour toggle;

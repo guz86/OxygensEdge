@@ -1416,8 +1416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e817db8d49d34a7c9370ab4d3cbec3ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enterOnEnable: 0
-  exitOnDisable: 0
+  enterOnEnable: 1
+  exitOnDisable: 1
   mode: 0
   states:
   - mode: 0
@@ -8932,8 +8932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ec9cc320234b848ac6d1c554750f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enterOnEnable: 1
-  exitOnDisable: 1
+  enterOnEnable: 0
+  exitOnDisable: 0
   mode: 0
   states:
   - mode: 0
@@ -15792,7 +15792,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &2023289530
 MonoBehaviour:

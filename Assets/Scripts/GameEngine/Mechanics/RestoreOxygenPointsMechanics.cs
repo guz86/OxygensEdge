@@ -15,10 +15,12 @@ namespace GameEngine.Mechanics
         {
             _exitFogReceiver.OnEvent += OnReadyToRestore;
             _delay.OnFinished += OnDelayEnded;
-            _restorePeriod.OnPeriodEvent += OnRestoreHitPoints;
+            _restorePeriod.OnPeriodEvent += OnRestoreOxyPoints;
 
             _enterFogReceiver.OnEvent += OnStopToRestore;
+            
         }
+
 
         private void OnStopToRestore()
         {
@@ -31,12 +33,14 @@ namespace GameEngine.Mechanics
         {
             _exitFogReceiver.OnEvent -= OnReadyToRestore;
             _delay.OnFinished -= OnDelayEnded;
-            _restorePeriod.OnPeriodEvent -= OnRestoreHitPoints;
+            _restorePeriod.OnPeriodEvent -= OnRestoreOxyPoints;
             
             _enterFogReceiver.OnEvent -= OnStopToRestore;
+            
+         
         }
 
-        private void OnRestoreHitPoints()
+        private void OnRestoreOxyPoints()
         {
             _oxygenPoints.CurrentOxygenPoints += 1;
             if (_oxygenPoints.CurrentOxygenPoints >= _oxygenPoints.MaxOxygenPoints)

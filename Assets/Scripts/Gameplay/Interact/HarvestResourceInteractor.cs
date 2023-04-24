@@ -77,7 +77,11 @@ namespace Gameplay.Interact
 
         private void DestroyResource(IEntity resource)
         {
-            resource.Get<IComponent_Collect>().Collect();
+            if (resource != null)
+            {
+                resource.Get<IComponent_Collect>().Collect();
+            }
+            
         }
 
         private void AddResourcesToStorage(IEntity resource)

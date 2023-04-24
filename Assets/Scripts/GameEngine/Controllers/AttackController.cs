@@ -13,13 +13,13 @@ namespace GameEngine.Controllers
     { 
         private AttackInput _input;
 
-        private IAttackComponent _attackBulletComponent;
+        private IAttackComponent _attackComponent;
 
         void IGameReadyElement.ReadyGame(IGameContext context)
         {
             _input = context
                 .GetService<AttackInput>();
-            _attackBulletComponent = context
+            _attackComponent = context
                 .GetService<HeroService>()
                 .GetHero()
                 .Get<IAttackComponent>();
@@ -37,7 +37,7 @@ namespace GameEngine.Controllers
         
         private void OnAttack()
         {
-            _attackBulletComponent.Attack();
+            _attackComponent.Attack();
         }
 
     }
